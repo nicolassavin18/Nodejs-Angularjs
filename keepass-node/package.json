@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/viktorj8979/Nodejs-Angular/keepass-node.git"
+    "url": ""
   },
   "main": "./lib/index.js",
   "scripts": {
