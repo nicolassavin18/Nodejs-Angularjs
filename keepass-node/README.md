@@ -5,8 +5,8 @@
 ## Installation
 First, you need Node.js running on your server of choice and navigate to a suitable folder. Then:
 ````
-~$ git clone https://github.com/viktorj8979/Nodejs-Angular/keepass-node.git
-~$ cd Angular-node-bootstrap
+~$ git clone https://github.com/nicolassavin18/Nodejs-Angularjs.git
+~$ cd ./Nodejs-Angularjs/keepass-node
 ````
 You'll find a config template `keepass-node-config.template.js` which shows you how to configure port (default 8443),
 an optional context path (also known as base path), https (optional), basic authentication (optional),
@@ -23,8 +23,8 @@ module.exports = {
 
 After changing its content to fit your needs, you can finish the installation and start the KeePass-Node server:
 ````
-~/Angular-node-bootstrap$ npm install
-~/Angular-node-bootstrap$ npm start
+~/keepass-node$ npm install
+~/keepass-node$ npm start
 ````
 NPM should download a small part of the internet for you and start the KeePass-Node server on the configured port.
 You may now enter the URL into your browser like follows,
@@ -42,13 +42,13 @@ You should find the mentioned `example.kdbx` there. You can copy your keepass fi
 or create a symbolic link (Windows users may ignore that hint). Hit `CTRL-C` if KeePass-Node is still running
 or use another shell.
 ````
-~/Angular-node-bootstrap$ cd local
-~/Angular-node-bootstrap/local$ ln -s ~/path/to/my/keepass.kdbx keepass.kdbx
+~/keepass-node$ cd local
+~/keepass-node/local$ ln -s ~/path/to/my/keepass.kdbx keepass.kdbx
 ````
 Now start the server again (if not still running):
 ````
-~/Angular-node-bootstrap/local$ cd ..
-~/Angular-node-bootstrap$ npm start
+~/keepass-node/local$ cd ..
+~/keepass-node$ npm start
 ````
 Refresh your browser window and you should see your keepass.kdbx in the database dropdown list.
 
